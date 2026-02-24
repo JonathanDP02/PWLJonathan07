@@ -1,59 +1,149 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+## Praktikum 1
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+### Route user
+![Screenshot](/PWL-2026/report/week-2/img/pwl p1 1.png)
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Praktikum 2
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+### 1. PageController - Modifikasi Route dengan Controller
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Membuat PageController dengan methods:
+- index() untuk route / - menampilkan "Selamat Datang"
+- about() untuk route /about - menampilkan NIM dan Nama
+- articles($id) untuk route /articles/{id} - menampilkan halaman artikel dengan ID
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+### 2. Single Action Controllers
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Modifikasi implementasi menggunakan Single Action Controller:
+- *HomeController* - menangani route /
+- *AboutController* - menangani route /about
+- *ArticleController* - menangani route /articles/{id}
 
-## Laravel Sponsors
+Setiap controller menggunakan method __invoke() sebagai single action.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-### Premium Partners
+### 3. Resource Controller - PhotoController
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Membuat PhotoController dengan perintah:
+bash
+php artisan make:controller PhotoController --resource
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Controller ini otomatis memiliki methods untuk CRUD:
+- index() - menampilkan daftar photos
+- create() - menampilkan form create
+- store() - menyimpan data baru
+- show($id) - menampilkan detail photo
+- edit($id) - menampilkan form edit
+- update($id) - update data
+- destroy($id) - hapus data
 
-## Code of Conduct
+Route resource ditambahkan di web.php:
+php
+Route::resource('photos', PhotoController::class);
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
+#### Route List untuk 
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+*Pengamatan:*
+Resource route secara otomatis membuat 7 routes untuk operasi CRUD lengkap. Jika tidak semua route dibutuhkan, dapat menggunakan method only() atau except() untuk membatasi routes yang di-generate.
 
-## License
+#### Route Resource dengan Only
+php
+Route::resource('photos', PhotoController::class)->only(['index', 'show']);
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+#### Route Resource dengan Except
+php
+Route::resource('photos', PhotoController::class)->except(['create', 'store', 'update', 'destroy']);
+
+
+## Praktikum 3
+
+### 1. Membuat View hello.blade.php
+
+Membuat file resources/views/blog/hello.blade.php:
+html
+<html>
+<body>
+    <h1>Hello, {{ $name }}</h1>
+    <h1>You are {{ $occupation }}</h1>
+</body>
+</html>
+
+
+### 2. Menampilkan View melalui Route
+
+Route /greeting ditambahkan untuk menampilkan view dengan data:
+php
+Route::get('/greeting', function () {
+    return view('hello', ['name' => 'Andi']);
+});
+
+
+#### Output Route /greeting
+![Screenshot](/PWL-2026/report/week-2/img/greeting-route.png)
+
+*Pengamatan:*
+View dapat dipanggil melalui helper function view() dengan parameter pertama adalah nama file (tanpa .blade.php) dan parameter kedua adalah array data yang akan dikirim ke view. Data dapat diakses di view menggunakan sintaks Blade {{ $variable }}.
+
+### 3. View dalam Direktori
+
+File hello.blade.php dipindahkan ke direktori resources/views/blog/.
+
+Route diubah menggunakan dot notation untuk mereferensikan direktori:
+php
+Route::get('/greeting', function () {
+    return view('blog.hello', ['name' => 'Andi']);
+});
+
+
+*Pengamatan:*
+Dot notation (.) digunakan untuk mereferensikan file view yang berada dalam subdirectory. blog.hello berarti Laravel akan mencari file di resources/views/blog/hello.blade.php.
+
+### 4. Menampilkan View dari Controller
+
+Menambahkan method greeting() di WelcomeController:
+php
+public function greeting() {
+    return view('blog.hello', ['name' => 'Andi']);
+}
+
+
+Route diubah untuk memanggil controller:
+php
+Route::get('/greeting', [WelcomeController::class, 'greeting']);
+
+
+
+*Pengamatan:*
+Memisahkan logika view ke controller membuat kode lebih terorganisir dan mudah di-maintain. Controller bertindak sebagai penghubung antara route dan view.
+
+### 5. Meneruskan Data ke View dengan Method with()
+
+Method greeting() diubah menggunakan method chaining dengan with():
+php
+public function greeting() {
+    return view('blog.hello')
+        ->with('name', 'Andi')
+        ->with('occupation', 'Astronaut');
+}
+
+
+View hello.blade.php diupdate untuk menampilkan 2 parameter:
+html
+<html>
+<body>
+    <h1>Hello, {{ $name }}</h1>
+    <h1>You are {{ $occupation }}</h1>
+</body>
+</html>
+
+
+*Pengamatan:*
+Method with() memberikan alternatif untuk passing data ke view dengan cara yang lebih readable, terutama ketika data yang dikirim banyak. Method ini dapat di-chain berkali-kali untuk mengirim multiple data. Di view, semua variable yang dikirim dapat diakses langsung menggunakan sintaks Blade {{ $variable }}
+
+## Tugas
+- [📄 Week 2 - Tugas](../../../PWL-POS/README.md).
