@@ -23,4 +23,26 @@
 ![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/79f42599f85eeed2237cca08b43e9c2c6201ac71/pwl%20p1%2011.png)
 
 
+## Praktikum 2
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/5fd5148dec0101536ae74d2b92f0586705912c6e/pwl%20p1%2012.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/5fd5148dec0101536ae74d2b92f0586705912c6e/pwl%20p1%2013.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/5fd5148dec0101536ae74d2b92f0586705912c6e/pwl%20p1%2014.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/5fd5148dec0101536ae74d2b92f0586705912c6e/pwl%20p1%2015.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/5fd5148dec0101536ae74d2b92f0586705912c6e/pwl%20p1%2016.png)
+
+## Praktikum 3
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/5fd5148dec0101536ae74d2b92f0586705912c6e/pwl%20p1%2017.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/5fd5148dec0101536ae74d2b92f0586705912c6e/pwl%20p1%2018.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/5fd5148dec0101536ae74d2b92f0586705912c6e/pwl%20p1%2019.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/5fd5148dec0101536ae74d2b92f0586705912c6e/pwl%20p1%2020.png)
+
 ## Tugas
