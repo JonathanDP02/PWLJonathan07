@@ -1,3 +1,5 @@
+## week 2
+
 ## Praktikum 1
 
 ![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/022d99e47d0da87ab6d0687eaa26d90e0bf1e96a/pwl%20p1%201.png)
