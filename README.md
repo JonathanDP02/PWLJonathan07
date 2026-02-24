@@ -1,8 +1,22 @@
 ## Praktikum 1
 
 ### Route user
-![Screenshot](/PWLJonathan/report/week-2/img/pwl p1 1.png)
+![image alt](/PWLJonathan/report/week-2/img/pwl p1 1.png)
 
+### Route posts/{id}/comment
+  ![Screenshot](/PWL-2026/report/week-2/img/praktikum-1.png)
+
+###  Membuat route /articles/{id} yang akan menampilkan output “Halaman Artikel  dengan ID {id}”
+
+ ![Screenshot](/PWL-2026/report/week-2/img/artikel.png)
+
+ ### Optional Parameter
+
+Tanpa Parameter
+![Screenshot](/PWL-2026/report/week-2/img/without-param.png)
+
+Dengan Parameter
+![Screenshot](/PWL-2026/report/week-2/img/user.png)
 
 ## Praktikum 2
 
