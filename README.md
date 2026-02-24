@@ -1,7 +1,7 @@
 ## Praktikum 1
 
 ### Route user
-![Screenshot](/PWL-2026/report/week-2/img/pwl p1 1.png)
+![Screenshot](/PWLJonathan/report/week-2/img/pwl p1 1.png)
 
 
 ## Praktikum 2
