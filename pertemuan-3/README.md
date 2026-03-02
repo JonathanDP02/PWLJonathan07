@@ -60,3 +60,29 @@ kegunaan dari tanda tanya (?) tersebut?
 ‘m_user’; dan protected $primaryKey = ‘user_id’; ?
 12. Menurut kalian, lebih mudah menggunakan mana dalam melakukan operasi CRUD ke
 database (DB Façade / Query Builder / Eloquent ORM) ? jelaskan
+
+## Jawaban
+
+1. APP_KEY berfungsi sebagai kunci enkripsi utama Laravel untuk mengamankan data seperti session, cookie, dan password.
+
+2. Nilai APP_KEY di-generate menggunakan perintah php artisan key:generate.
+
+3. Secara default ada 3 file migrasi yaitu users, password_reset_tokens, dan failed_jobs untuk mengelola user, reset password, dan job yang gagal.
+
+4. $table->timestamps(); berfungsi membuat kolom created_at dan updated_at secara otomatis.
+
+5. $table->id(); menghasilkan tipe data BIGINT UNSIGNED AUTO_INCREMENT sebagai primary key.
+
+6. $table->id(); membuat kolom bernama id, sedangkan $table->id('level_id'); membuat kolom bernama level_id dengan tipe yang sama.
+
+7. ->unique() digunakan untuk membuat nilai dalam kolom tidak boleh duplikat.
+
+8. Karena level_id di m_level bertipe BIGINT UNSIGNED, maka di m_user harus memakai unsignedBigInteger agar tipe data foreign key sama.
+
+9. Class Hash digunakan untuk mengenkripsi password, dan Hash::make('1234') mengubah password menjadi bentuk hash yang aman.
+
+10. Tanda tanya (?) pada query builder berfungsi sebagai parameter binding untuk mencegah SQL Injection.
+
+11. protected $table dan $primaryKey digunakan untuk menentukan nama tabel dan primary key yang tidak sesuai default Laravel.
+
+12. Eloquent ORM lebih mudah untuk CRUD karena sintaksnya sederhana dan tidak perlu menulis query SQL secara manual.
