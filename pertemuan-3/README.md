@@ -2,20 +2,75 @@
 
 ## Praktikum 1
 
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/6b4c85a1d2c0ad444999aded971dbbbf95f4f9c9/pertemuan-3/pwl%20p4%201.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/6b4c85a1d2c0ad444999aded971dbbbf95f4f9c9/pertemuan-3/pwl%20p4%202.png)
+
 ## Praktikum 2.1
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/6b4c85a1d2c0ad444999aded971dbbbf95f4f9c9/pertemuan-3/pwl%20p4%203.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/6b4c85a1d2c0ad444999aded971dbbbf95f4f9c9/pertemuan-3/pwl%20p4%204.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/6b4c85a1d2c0ad444999aded971dbbbf95f4f9c9/pertemuan-3/pwl%20p4%205.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/6b4c85a1d2c0ad444999aded971dbbbf95f4f9c9/pertemuan-3/pwl%20p4%206.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/6b4c85a1d2c0ad444999aded971dbbbf95f4f9c9/pertemuan-3/pwl%20p4%207.png)
 
 ## Praktikum 2.2
 
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/6b4c85a1d2c0ad444999aded971dbbbf95f4f9c9/pertemuan-3/pwl%20p4%208.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/6b4c85a1d2c0ad444999aded971dbbbf95f4f9c9/pertemuan-3/pwl%20p4%209.png)
+
 ## Praktikum 2.3
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/6b4c85a1d2c0ad444999aded971dbbbf95f4f9c9/pertemuan-3/pwl%20p4%2010.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/6b4c85a1d2c0ad444999aded971dbbbf95f4f9c9/pertemuan-3/pwl%20p4%2011.png)
 
 ## Praktikum 2.4
 
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/6b4c85a1d2c0ad444999aded971dbbbf95f4f9c9/pertemuan-3/pwl%20p4%2012.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/6b4c85a1d2c0ad444999aded971dbbbf95f4f9c9/pertemuan-3/pwl%20p4%2013.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/6b4c85a1d2c0ad444999aded971dbbbf95f4f9c9/pertemuan-3/pwl%20p4%2014.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/6b4c85a1d2c0ad444999aded971dbbbf95f4f9c9/pertemuan-3/pwl%20p4%2015.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/6b4c85a1d2c0ad444999aded971dbbbf95f4f9c9/pertemuan-3/pwl%20p4%2016.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/6b4c85a1d2c0ad444999aded971dbbbf95f4f9c9/pertemuan-3/pwl%20p4%2017.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/6b4c85a1d2c0ad444999aded971dbbbf95f4f9c9/pertemuan-3/pwl%20p4%2018.png)
+
 ## Praktikum 2.5
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/6b4c85a1d2c0ad444999aded971dbbbf95f4f9c9/pertemuan-3/pwl%20p4%2019.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/6b4c85a1d2c0ad444999aded971dbbbf95f4f9c9/pertemuan-3/pwl%20p4%2020.png)
 
 ## Praktikum 2.6
 
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/6b4c85a1d2c0ad444999aded971dbbbf95f4f9c9/pertemuan-3/pwl%20p4%2021.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/6b4c85a1d2c0ad444999aded971dbbbf95f4f9c9/pertemuan-3/pwl%20p4%2022.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/6b4c85a1d2c0ad444999aded971dbbbf95f4f9c9/pertemuan-3/pwl%20p4%2023.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/6b4c85a1d2c0ad444999aded971dbbbf95f4f9c9/pertemuan-3/pwl%20p4%2024.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/6b4c85a1d2c0ad444999aded971dbbbf95f4f9c9/pertemuan-3/pwl%20p4%2025.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/6b4c85a1d2c0ad444999aded971dbbbf95f4f9c9/pertemuan-3/pwl%20p4%2026.png)
+
 ## Praktikum 2.7
 
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/6b4c85a1d2c0ad444999aded971dbbbf95f4f9c9/pertemuan-3/pwl%20p4%2027.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/6b4c85a1d2c0ad444999aded971dbbbf95f4f9c9/pertemuan-3/pwl%20p4%2028.png)
 
 ## week 3
 
