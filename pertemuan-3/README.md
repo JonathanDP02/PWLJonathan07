@@ -1,3 +1,22 @@
+## week 4
+
+## Praktikum 1
+
+## Praktikum 2.1
+
+## Praktikum 2.2
+
+## Praktikum 2.3
+
+## Praktikum 2.4
+
+## Praktikum 2.5
+
+## Praktikum 2.6
+
+## Praktikum 2.7
+
+
 ## week 3
 
 ## Praktikum 1
@@ -86,3 +105,4 @@ database (DB Façade / Query Builder / Eloquent ORM) ? jelaskan
 11. protected $table dan $primaryKey digunakan untuk menentukan nama tabel dan primary key yang tidak sesuai default Laravel.
 
 12. Eloquent ORM lebih mudah untuk CRUD karena sintaksnya sederhana dan tidak perlu menulis query SQL secara manual.
+
