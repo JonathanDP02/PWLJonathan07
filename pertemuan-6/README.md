@@ -1,58 +1,40 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+## PRAKTIKUM 1
+## PRAKTIKUM 2
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+# I. Analisis & Diskusi
 
-## About Laravel
+# Mengapa Filament dapat membuat CRUD tanpa banyak coding?
+Filament menggunakan pendekatan declarative (berbasis skema) dan dibangun terintegrasi erat dengan ekosistem Laravel (terutama Eloquent ORM dan Livewire). Daripada menulis controller, routing, dan halaman view (HTML/Blade) secara manual dari nol, Filament sudah merangkai logika standar CRUD di belakang layar. Kamu hanya perlu mendeklarasikan "apa" yang ingin dibuat (misalnya TextInput atau TextColumn), dan sistem otomatis men-generate antarmuka serta fungsi database-nya.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# Apa perbedaan Form Schema dan Table Schema?
+Form Schema (form()): Digunakan secara khusus untuk mengatur tampilan antarmuka saat pengguna memasukkan data baru (Create) atau mengubah data yang sudah ada (Edit). Di sini kamu mendefinisikan komponen input (teks, dropdown, upload gambar) beserta aturan validasinya.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Table Schema (table()): Digunakan untuk mengatur bagaimana data ditampilkan dalam bentuk daftar/tabel (halaman List). Di sini kamu menentukan kolom apa saja yang muncul, mengatur fitur pencarian (searchable), pengurutan data (sortable), filter, dan tombol aksi (seperti View, Edit, Delete).
+# Bagaimana jika kita ingin menambahkan validasi email unik?
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Di dalam Filament, menambahkan validasi sangat mudah karena langsung disambungkan pada komponen form-nya. Kamu cukup menambahkan method unique() pada kolom email di UserForm.php.
 
-## Learning Laravel
+# Mengapa password tidak perlu kita hash manual?
+Pada Laravel 11, Model User bawaan sudah dilengkapi dengan fitur Model Casts. Jika kamu membuka file app/Models/User.php, terdapat pendefinisian array $casts yang mengubah password menjadi hashed ('password' => 'hashed'). Karena adanya aturan ini di level Model, setiap kali Filament (atau fitur Laravel lainnya) menyimpan kata sandi ke kolom password, Laravel secara otomatis mengeksekusi fungsi hash sesaat sebelum data tersebut menyentuh database.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## PRAKTIKUM 3
 
-In addition, [Laracasts](https://laracasts.com) contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+# J. Analisis & Diskusi
 
-You can also watch bite-sized lessons with real-world projects on [Laravel Learn](https://laravel.com/learn), where you will be guided through building a Laravel application from scratch while learning PHP fundamentals.
+# Mengapa kita perlu $fillable?
+$fillable diperlukan sebagai fitur keamanan yang disebut Mass Assignment Protection. Saat kita menyimpan data menggunakan metode seperti Category::create($request->all()), Laravel perlu tahu kolom mana saja yang boleh diisi secara otomatis oleh user.
 
-## Agentic Development
+# Apa fungsi $casts pada Laravel?
+Fungsi $casts adalah untuk mengonversi tipe data secara otomatis saat data diambil dari database atau saat akan disimpan. Database sering kali menyimpan data dalam format sederhana (seperti string atau integer)
 
-Laravel's predictable structure and conventions make it ideal for AI coding agents like Claude Code, Cursor, and GitHub Copilot. Install [Laravel Boost](https://laravel.com/docs/ai) to supercharge your AI workflow:
+# Apa perbedaan integer biasa dengan foreign key?
+Integer Biasa: Hanya sebuah tipe data angka yang tidak memiliki keterikatan dengan tabel lain. Angka tersebut tidak menjamin bahwa data yang dirujuk benar-benar ada.
 
-```bash
-composer require laravel/boost --dev
+Foreign Key: Adalah kolom integer khusus yang berfungsi sebagai penghubung (link) ke Primary Key di tabel lain. Foreign key menjaga Integritas Referensial, artinya database akan memastikan bahwa nilai category_id di tabel posts harus merujuk pada id yang valid dan ada di tabel categories.
 
-php artisan boost:install
-```
+# Bagaimana jika category dihapus tetapi masih ada post?
+Pada langkah migrasi tadi, kita menggunakan perintah ->cascadeOnDelete(). Efeknya adalah:
 
-Boost provides your agent 15+ tools and skills that help agents build Laravel applications while following best practices.
+    Jika sebuah Category dihapus, maka secara otomatis seluruh Post yang terhubung dengan kategori tersebut akan ikut terhapus.
 
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+    Hal ini dilakukan untuk mencegah adanya data "yatim" (orphaned data), yaitu postingan yang memiliki category_id tetapi kategorinya sudah tidak ada di database, yang bisa menyebabkan error pada aplikasi.
