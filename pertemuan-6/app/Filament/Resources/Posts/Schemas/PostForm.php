@@ -11,7 +11,10 @@ use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\TagsInput;
 use Filament\Forms\Components\Checkbox;
-use Filament\Forms\COmponents\DateTimePicker;
+use Filament\Forms\Components\DateTimePicker;
+use Filament\Schemas\Components\Section;
+use Filament\Support\Icons\Heroicon;
+use Filament\Schemas\Components\Group;
 
 class PostForm
 {
@@ -20,6 +23,11 @@ class PostForm
         return $schema
             ->components([
                 //
+                Section::make("Post Details")
+                -> Description("Fill in the details of the post")
+                -> Icon('heroicon-o-document-text')
+                ->schema([
+                Group::make([
                 TextInput::make("title"),
                 TextInput::make("slug"),
                 Select::make("category_id")
@@ -28,13 +36,27 @@ class PostForm
                     ->searchable(),
                 ColorPicker::make("color"),
                 // MarkdownEditor::make("body"),
+                ])->columns(2),
                 RichEditor::make("body"),
-                FileUpload::make("image")
-                ->disk("public")
-                ->directory("posts"),
-                TagsInput::make("tags"),
-                Checkbox::make("published"),
-                DateTimePicker::make("published_at"),
-            ]);
+                ])->columnSpan(2),
+
+            Group::make([
+
+                Section::make("Image Upload")
+                ->schema([
+                    FileUpload::make("image")
+                        ->disk("public")
+                        ->directory("posts"),
+                ]),
+
+                Section::make("Meta Information")
+                ->schema([
+                    TagsInput::make("tags"),
+                    Checkbox::make("published"),
+                    DateTimePicker::make("published_at"),
+                ]),
+                ])->columnSpan(1),
+            
+            ])->columns(3);
     }
 }

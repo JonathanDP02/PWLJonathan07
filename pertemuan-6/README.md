@@ -63,15 +63,15 @@ Pada langkah migrasi tadi, kita menggunakan perintah ->cascadeOnDelete(). Efekny
 
 ## Praktikum 1
 
-![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/184cf20fb833a0fd000ba20798800c5caf7643f1/pertemuan-6/pt6-4.png)
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/57b3e18af739db1087711729746856763bea4c8e/pertemuan-6/pt5-1.png)
 
-![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/184cf20fb833a0fd000ba20798800c5caf7643f1/pertemuan-6/pt6-4.png)
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/57b3e18af739db1087711729746856763bea4c8e/pertemuan-6/pt5-2.png)
 
-![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/184cf20fb833a0fd000ba20798800c5caf7643f1/pertemuan-6/pt6-4.png)
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/57b3e18af739db1087711729746856763bea4c8e/pertemuan-6/pt5-3.png)
 
-![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/184cf20fb833a0fd000ba20798800c5caf7643f1/pertemuan-6/pt6-4.png)
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/57b3e18af739db1087711729746856763bea4c8e/pertemuan-6/pt5-4.png)
 
-![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/184cf20fb833a0fd000ba20798800c5caf7643f1/pertemuan-6/pt6-4.png)
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/57b3e18af739db1087711729746856763bea4c8e/pertemuan-6/pt5-5.png)
 
 # I. Analisis & Diskusi
 
@@ -88,5 +88,39 @@ Untuk menampilkan nama kategori yang lebih readable bagi user, bukan ID numerik 
 RichEditor: WYSIWYG editor (What You See Is What You Get) dengan toolbar formatting buttons
 MarkdownEditor: Membutuhkan syntax markdown manual (bold: **text**, italic: *text*, dll)
 
+## PRAKTIKUM 2
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/57b3e18af739db1087711729746856763bea4c8e/pertemuan-6/pt5-5.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/57b3e18af739db1087711729746856763bea4c8e/pertemuan-6/pt5-5.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/57b3e18af739db1087711729746856763bea4c8e/pertemuan-6/pt5-5.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/57b3e18af739db1087711729746856763bea4c8e/pertemuan-6/pt5-5.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/57b3e18af739db1087711729746856763bea4c8e/pertemuan-6/pt5-5.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/57b3e18af739db1087711729746856763bea4c8e/pertemuan-6/pt5-5.png)
+
+# I. Analisis & Diskusi
+
+# Mengapa layout form penting dalam aplikasi admin?
+Meningkatkan user experience: Form terorganisir mudah dipahami dan diisi
+Mengurangi kesalahan input: Pengelompokan yang jelas membantu user fokus
+Meningkatkan efisiensi: User bekerja lebih cepat dengan navigasi form yang logis
+Profesional: Form yang rapi meningkatkan kredibilitas aplikasi
+
+# Apa perbedaan Section dan Group?
+Section: Membuat container dengan header/title, border, dan visual separation jelas. Cocok untuk mengelompokkan field dalam kategori besar
+Group: Hanya mengelompokkan field tanpa visual header yang menonjol. Lebih subtle, cocok untuk sub-grouping kecil dalam section
+
+# Kapan kita menggunakan columnSpanFull()?
+Ketika ingin field mengambil seluruh lebar form (12 kolom dari 12). Contoh: RichEditor, FileUpload, atau field yang butuh space banyak.
+
+# Apa keuntungan sistem grid 12 kolom?
+Fleksibel: Bisa dibagi menjadi 1, 2, 3, 4, 6, 12 kolom (semua pembagi 12)
+Responsive: Mudah menyesuaikan layout di berbagai ukuran layar
+Konsistensi: Standard industri, mudah dipahami developer lain
+Control presisi: Fine-grained control atas penempatan elemen (span 3, 6, 4, dll)
 
 ## Pertemuan 7
