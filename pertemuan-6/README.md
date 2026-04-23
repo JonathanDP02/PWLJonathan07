@@ -90,17 +90,17 @@ MarkdownEditor: Membutuhkan syntax markdown manual (bold: **text**, italic: *tex
 
 ## PRAKTIKUM 2
 
-![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/57b3e18af739db1087711729746856763bea4c8e/pertemuan-6/pt5-5.png)
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/1759f2a5180b14706e6464085532bc4a659cf79c/pertemuan-6/pt5-6.png)
 
-![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/57b3e18af739db1087711729746856763bea4c8e/pertemuan-6/pt5-5.png)
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/1759f2a5180b14706e6464085532bc4a659cf79c/pertemuan-6/pt5-7.png)
 
-![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/57b3e18af739db1087711729746856763bea4c8e/pertemuan-6/pt5-5.png)
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/1759f2a5180b14706e6464085532bc4a659cf79c/pertemuan-6/pt5-8.png)
 
-![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/57b3e18af739db1087711729746856763bea4c8e/pertemuan-6/pt5-5.png)
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/1759f2a5180b14706e6464085532bc4a659cf79c/pertemuan-6/pt5-9.png)
 
-![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/57b3e18af739db1087711729746856763bea4c8e/pertemuan-6/pt5-5.png)
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/1759f2a5180b14706e6464085532bc4a659cf79c/pertemuan-6/pt5-10.png)
 
-![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/57b3e18af739db1087711729746856763bea4c8e/pertemuan-6/pt5-5.png)
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/1759f2a5180b14706e6464085532bc4a659cf79c/pertemuan-6/pt5-11.png)
 
 # I. Analisis & Diskusi
 
@@ -122,5 +122,34 @@ Fleksibel: Bisa dibagi menjadi 1, 2, 3, 4, 6, 12 kolom (semua pembagi 12)
 Responsive: Mudah menyesuaikan layout di berbagai ukuran layar
 Konsistensi: Standard industri, mudah dipahami developer lain
 Control presisi: Fine-grained control atas penempatan elemen (span 3, 6, 4, dll)
+
+## PRAKTIKUM 3
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/91f07142af6769f08b7ec48cf0891f4925dda0d9/pertemuan-6/pt5-12.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/91f07142af6769f08b7ec48cf0891f4925dda0d9/pertemuan-6/pt5-13.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/91f07142af6769f08b7ec48cf0891f4925dda0d9/pertemuan-6/pt5-14.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/91f07142af6769f08b7ec48cf0891f4925dda0d9/pertemuan-6/pt5-15.png)
+
+# K. Analisis & Diskusi
+
+# Mengapa validasi penting pada admin panel?
+Data integrity: Mencegah data invalid masuk ke database
+Security: Melindungi dari input berbahaya (injection, XSS, dll)
+User experience: Memberikan feedback jelas tentang kesalahan input
+Consistency: Memastikan format dan aturan bisnis terpenuhi (unique email, min length, dll)
+
+# Apa perbedaan validasi client-side dan server-side?
+Client-side: Validasi di browser sebelum kirim ke server. Cepat, UX baik, tapi bisa di-bypass
+Server-side: Validasi di server setelah menerima data. Lebih aman, tidak bisa di-bypass, tapi lebih lambat
+
+# Mengapa unique otomatis bekerja saat edit data?
+Filament secara otomatis menambahkan ignoreRecord() pada rule unique() saat edit. Ini mengabaikan record yang sedang diedit dari pengecekan unique, sehingga user bisa simpan tanpa mengubah field (tidak dianggap duplicate).
+
+# Kapan kita perlu menggunakan rules array dibanding string?
+String: Rule sederhana, satu per field. Contoh: 'required|email|max:255'
+Array: Ketika butuh rule kompleks dengan parameter khusus.
 
 ## Pertemuan 7

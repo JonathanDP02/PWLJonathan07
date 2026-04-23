@@ -28,10 +28,17 @@ class PostForm
                 -> Icon('heroicon-o-document-text')
                 ->schema([
                 Group::make([
-                TextInput::make("title"),
-                TextInput::make("slug"),
+                TextInput::make("title")
+                    ->rules('required | min:3 | max:10'),
+                TextInput::make("slug")
+                    ->rules('required')
+                    ->unique()
+                    ->validationMessages([
+                        'unique' => 'Slug must be unique.',
+                    ]),
                 Select::make("category_id")
                     ->relationship("category", "name")
+                    ->required()
                     ->preload()
                     ->searchable(),
                 ColorPicker::make("color"),
@@ -45,15 +52,19 @@ class PostForm
                 Section::make("Image Upload")
                 ->schema([
                     FileUpload::make("image")
+                        ->required()
                         ->disk("public")
                         ->directory("posts"),
                 ]),
 
                 Section::make("Meta Information")
                 ->schema([
-                    TagsInput::make("tags"),
-                    Checkbox::make("published"),
-                    DateTimePicker::make("published_at"),
+                    TagsInput::make("tags")
+                        ->required(),
+                    Checkbox::make("published")
+                        ->required(),
+                    DateTimePicker::make("published_at")
+                        ->required(),
                 ]),
                 ])->columnSpan(1),
             
