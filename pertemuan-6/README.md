@@ -60,4 +60,33 @@ Pada langkah migrasi tadi, kita menggunakan perintah ->cascadeOnDelete(). Efekny
     Hal ini dilakukan untuk mencegah adanya data "yatim" (orphaned data), yaitu postingan yang memiliki category_id tetapi kategorinya sudah tidak ada di database, yang bisa menyebabkan error pada aplikasi.
 
 ## Pertemuan 6
+
+## Praktikum 1
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/184cf20fb833a0fd000ba20798800c5caf7643f1/pertemuan-6/pt6-4.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/184cf20fb833a0fd000ba20798800c5caf7643f1/pertemuan-6/pt6-4.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/184cf20fb833a0fd000ba20798800c5caf7643f1/pertemuan-6/pt6-4.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/184cf20fb833a0fd000ba20798800c5caf7643f1/pertemuan-6/pt6-4.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/184cf20fb833a0fd000ba20798800c5caf7643f1/pertemuan-6/pt6-4.png)
+
+# I. Analisis & Diskusi
+
+# Mengapa kita perlu storage:link?
+Membuat symbolic link dari storage/app/public ke public/storage agar file yang diupload bisa diakses via HTTP (browser).
+
+# Apa fungsi $casts untuk field JSON?
+Otomatis mengkonversi JSON dari database menjadi array saat baca, dan array menjadi JSON saat simpan. Dalam contoh: 'tags' => 'array' membuat tags otomatis jadi array PHP.
+
+# Mengapa kita menggunakan category.name bukan category_id?
+Untuk menampilkan nama kategori yang lebih readable bagi user, bukan ID numerik yang tidak meaningful. Ini adalah relationship (relasi) ke tabel categories.
+
+# Apa perbedaan RichEditor dan MarkdownEditor?
+RichEditor: WYSIWYG editor (What You See Is What You Get) dengan toolbar formatting buttons
+MarkdownEditor: Membutuhkan syntax markdown manual (bold: **text**, italic: *text*, dll)
+
+
 ## Pertemuan 7
