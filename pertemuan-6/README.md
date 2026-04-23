@@ -1,3 +1,5 @@
+## Pertemuan 5
+
 ## PRAKTIKUM 1
 ![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/184cf20fb833a0fd000ba20798800c5caf7643f1/pertemuan-6/pt6-1.png)
 
@@ -56,3 +58,6 @@ Pada langkah migrasi tadi, kita menggunakan perintah ->cascadeOnDelete(). Efekny
     Jika sebuah Category dihapus, maka secara otomatis seluruh Post yang terhubung dengan kategori tersebut akan ikut terhapus.
 
     Hal ini dilakukan untuk mencegah adanya data "yatim" (orphaned data), yaitu postingan yang memiliki category_id tetapi kategorinya sudah tidak ada di database, yang bisa menyebabkan error pada aplikasi.
+
+## Pertemuan 6
+## Pertemuan 7
