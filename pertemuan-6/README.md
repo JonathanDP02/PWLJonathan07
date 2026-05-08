@@ -1,4 +1,4 @@
-## Pertemuan 5
+# Pertemuan 5
 
 ## PRAKTIKUM 1
 ![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/184cf20fb833a0fd000ba20798800c5caf7643f1/pertemuan-6/pt6-1.png)
@@ -59,7 +59,12 @@ Pada langkah migrasi tadi, kita menggunakan perintah ->cascadeOnDelete(). Efekny
 
     Hal ini dilakukan untuk mencegah adanya data "yatim" (orphaned data), yaitu postingan yang memiliki category_id tetapi kategorinya sudah tidak ada di database, yang bisa menyebabkan error pada aplikasi.
 
-## Pertemuan 6
+
+
+
+
+
+# Pertemuan 6
 
 ## Praktikum 1
 
@@ -152,4 +157,33 @@ Filament secara otomatis menambahkan ignoreRecord() pada rule unique() saat edit
 String: Rule sederhana, satu per field. Contoh: 'required|email|max:255'
 Array: Ketika butuh rule kompleks dengan parameter khusus.
 
-## Pertemuan 7
+
+
+
+
+
+# Pertemuan 7
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/321daa3bc8f87434cfcb0be247b1679ae3ccfeb6/pertemuan-6/pt7-1.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/321daa3bc8f87434cfcb0be247b1679ae3ccfeb6/pertemuan-6/pt7-2.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/321daa3bc8f87434cfcb0be247b1679ae3ccfeb6/pertemuan-6/pt7-3.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/321daa3bc8f87434cfcb0be247b1679ae3ccfeb6/pertemuan-6/pt7-3.png)
+
+## L. Analisis & Diskusi
+
+### 1. Mengapa Wizard Form lebih baik untuk form panjang?
+Karena mengurangi "beban kognitif" user. Form yang terlalu panjang di satu halaman bisa membuat user merasa kewalahan (overwhelmed). Dengan Wizard, data dipecah menjadi bagian-bagian kecil sehingga user bisa lebih fokus dan tidak merasa bosan saat mengisi.
+
+### 2. Kapan kita menggunakan skippable()?
+Saat urutan pengisian tidak harus berurutan secara ketat atau jika ada langkah yang bersifat opsional. Dengan skippable(), user bebas berpindah ke tahap mana pun tanpa harus menyelesaikan validasi di tahap sebelumnya terlebih dahulu.
+
+### 3. Apa kelebihan multi step dibanding single form panjang?
+Visual yang lebih bersih: Tidak butuh banyak scrolling.
+Indikator Progress: User tahu sudah sejauh mana mereka mengisi dan berapa langkah lagi yang tersisa.
+Organisasi Data: Memungkinkan pengelompokan input yang memiliki kategori berbeda (misal: Info Produk vs. Media) secara lebih logis.
+
+### 4. Apakah wizard cocok untuk semua jenis form?
+Tidak. Untuk form pendek (seperti Login, Search, atau Contact Us singkat), Wizard justru akan merepotkan karena menambah jumlah klik yang tidak perlu. Wizard paling pas digunakan untuk proses yang kompleks seperti Check-out belanja atau pendaftaran data yang sangat detail.
