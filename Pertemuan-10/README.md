@@ -1,24 +1,24 @@
 
 # Pertemuan 10
 
-![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/050f1d93240ba2dfdcf7f09f9c1a4d7ef6d76339/pertemuan-6/pt9-1.png)
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/62a84d5821234d233f873f1eda01292c10eb8f24/Pertemuan-10/pt10-1.png)
 
-![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/050f1d93240ba2dfdcf7f09f9c1a4d7ef6d76339/pertemuan-6/pt9-2.png)
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/62a84d5821234d233f873f1eda01292c10eb8f24/Pertemuan-10/pt10-2.png)
 
-![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/050f1d93240ba2dfdcf7f09f9c1a4d7ef6d76339/pertemuan-6/pt9-3.png)
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/62a84d5821234d233f873f1eda01292c10eb8f24/Pertemuan-10/pt10-3.png)
 
-![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/050f1d93240ba2dfdcf7f09f9c1a4d7ef6d76339/pertemuan-6/pt9-4.png)
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/62a84d5821234d233f873f1eda01292c10eb8f24/Pertemuan-10/pt10-4.png)
 
 ## L. Analisis & Diskusi
 
-### 1. Kapan kita menggunakan Tabs dibanding Section?
-Gunakan Tabs ketika Anda ingin menghemat ruang layar dengan menyembunyikan informasi yang tidak perlu dilihat secara bersamaan, dan gunakan Section untuk mengelompokkan informasi yang harus selalu terlihat bersisian.
+### 1. Mengapa sorting penting pada admin panel?
+Sorting (pengurutan) sangat penting pada admin panel karena memungkinkan pengguna untuk dengan cepat menemukan, mengorganisir, dan menganalisis prioritas data dari ribuan baris informasi tanpa harus mencarinya secara manual satu per satu.
 
-### 2. Apa kelebihan Tabs untuk data panjang?
-Kelebihan utama Tabs untuk data panjang adalah kemampuannya memecah form atau informasi masif menjadi potongan-potongan kecil yang terfokus, sehingga mencegah pengguna kelelahan menggulir layar (scrolling fatigue).
+### 2. Apa perbedaan sortable biasa dengan defaultSort()?
+Method sortable() memberikan opsi agar kolom tersebut bisa diurutkan secara manual oleh pengguna dengan cara mengklik header tabelnya, sedangkan defaultSort() berfungsi untuk menentukan urutan baku data secara otomatis saat halaman pertama kali dimuat tanpa perlu interaksi pengguna.
 
-### 3. Apakah Tabs bisa digunakan pada Form juga?
-Ya, Tabs sangat bisa dan lazim digunakan di dalam form (Form Builder) Filament untuk merapikan antarmuka saat pengguna harus mengisi puluhan kolom input.
+### 3. Mengapa relasi tetap bisa di-sort?
+Kolom yang berasal dari relasi antar-tabel tetap bisa diurutkan karena di balik layar, framework (seperti Eloquent di Laravel) menggunakan mekanisme SQL JOIN sehingga operasi pengurutan tetap dieksekusi secara efisien langsung di dalam database.
 
-### 4. Bagaimana jika tab terlalu banyak?
-Jika tab sudah terlalu banyak hingga antarmukanya menumpuk atau menyulitkan navigasi, sebaiknya ubah pendekatan desain Anda dengan menggunakan komponen Wizard (pengisian langkah demi langkah) atau memecah datanya ke dalam Relation Manager terpisah.
+### 4. Kapan kita menggunakan desc sebagai default?
+Pengurutan desc (descending atau menurun) ideal digunakan sebagai default ketika pengguna perlu melihat data yang paling baru, paling besar, atau paling urgen di urutan teratas, seperti riwayat transaksi terakhir atau pendaftaran pengguna baru.
