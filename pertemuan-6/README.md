@@ -187,3 +187,29 @@ Organisasi Data: Memungkinkan pengelompokan input yang memiliki kategori berbeda
 
 ### 4. Apakah wizard cocok untuk semua jenis form?
 Tidak. Untuk form pendek (seperti Login, Search, atau Contact Us singkat), Wizard justru akan merepotkan karena menambah jumlah klik yang tidak perlu. Wizard paling pas digunakan untuk proses yang kompleks seperti Check-out belanja atau pendaftaran data yang sangat detail.
+
+# Pertemuan 8
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/1be3b70b36616fae676a17e7f933ee099146fc96/pertemuan-6/pt8-1.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/1be3b70b36616fae676a17e7f933ee099146fc96/pertemuan-6/pt8-2.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/1be3b70b36616fae676a17e7f933ee099146fc96/pertemuan-6/pt8-3.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/1be3b70b36616fae676a17e7f933ee099146fc96/pertemuan-6/pt8-4.png)
+
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/1be3b70b36616fae676a17e7f933ee099146fc96/pertemuan-6/pt8-5.png)
+
+## L. Analisis & Diskusi
+
+### 1. Mengapa View Page tidak cocok menggunakan form input?
+View Page tidak cocok menggunakan form input karena halaman tersebut secara arsitektur dan pengalaman pengguna didesain khusus hanya untuk membaca informasi (read-only), sehingga mencegah terjadinya perubahan data yang tidak disengaja.
+
+### 2. Apa perbedaan TextColumn dan TextEntry?
+Perbedaan utamanya adalah TextColumn digunakan khusus untuk menampilkan teks pada banyak baris data di dalam tabel (halaman List), sedangkan TextEntry digunakan untuk menampilkan detail teks dari satu data spesifik di dalam Infolist (halaman View).
+
+### 3. Kapan kita menggunakan badge?
+Kita menggunakan badge ketika perlu menonjolkan status, kondisi, atau kategori singkat—seperti "Aktif" atau "Lunas"—dengan bantuan warna agar informasi tersebut langsung tertangkap oleh mata dalam hitungan detik.
+
+### 4. Apa keuntungan menggunakan IconEntry untuk boolean?
+Keuntungan utama menggunakan IconEntry untuk data boolean adalah memberikan kecepatan pemahaman visual kepada pengguna melalui simbol (seperti ceklis hijau atau silang merah) yang jauh lebih intuitif dan bersih dibandingkan harus membaca teks "Ya/Tidak" atau "True/False".
