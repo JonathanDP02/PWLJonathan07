@@ -1,17 +1,14 @@
 
 # Pertemuan 12
 
-![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/a7fc1ec96e5759c10ae038a322d720391daa1c50/Pertemuan-11/pt11-1.png)
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/bd796b459af299927e595d2e1576ab86e52c7918/Pertemuan-12/pt12-1.png)
 
-![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/a7fc1ec96e5759c10ae038a322d720391daa1c50/Pertemuan-11/pt11-2.png)
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/bd796b459af299927e595d2e1576ab86e52c7918/Pertemuan-12/pt12-2.png)
 
-![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/a7fc1ec96e5759c10ae038a322d720391daa1c50/Pertemuan-11/pt11-3.png)
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/bd796b459af299927e595d2e1576ab86e52c7918/Pertemuan-12/pt12-3.png)
 
-![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/a7fc1ec96e5759c10ae038a322d720391daa1c50/Pertemuan-11/pt11-4.png)
+![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/bd796b459af299927e595d2e1576ab86e52c7918/Pertemuan-12/pt12-4.png)
 
-![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/a7fc1ec96e5759c10ae038a322d720391daa1c50/Pertemuan-11/pt11-5.png)
-
-![image alt](https://github.com/JonathanDP02/PWLJonathan07/blob/a7fc1ec96e5759c10ae038a322d720391daa1c50/Pertemuan-11/pt11-6.png)
 
 ## L. Analisis & Diskusi
 
